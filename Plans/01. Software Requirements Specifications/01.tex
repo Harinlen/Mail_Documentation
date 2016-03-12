@@ -1,0 +1,518 @@
+\documentclass[11pt,a4paper]{article}
+
+%Text Color
+\usepackage{color}
+
+%Paragraph Spacing
+\usepackage{setspace}
+
+%Graphics
+\usepackage{graphicx}
+
+%Page Margins
+\usepackage{geometry}
+
+%Basic Staff
+\usepackage{enumerate}
+\usepackage{amsmath}
+
+%Long Table
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{longtable}
+
+%URL link
+\usepackage{url}
+
+%Appendix
+\usepackage[toc,page,title,titletoc,header]{appendix}
+
+%Font sizes
+\newcommand{\titlesize}{\fontsize{70pt}{\baselineskip}\selectfont}
+\newcommand{\noticesize}{\fontsize{10pt}{\baselineskip}\selectfont}
+\newcommand{\intitlesize}{\fontsize{17pt}{\baselineskip}\selectfont}
+\newcommand{\licensetitle}{\fontsize{12pt}{\baselineskip}\selectfont}
+\begin{document}
+    \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+    \begin{titlepage}
+        \newgeometry{left=2.7cm,right=2.4cm,top=3.3cm,bottom=2.5cm}
+        \begin{figure}[h!]
+            \hfill\includegraphics{Kreogist.png}
+        \end{figure}
+        \begin{spacing}{2.0}
+            \textcolor[rgb]{0.49,0.52,0.55}{\titlesize \\ \textbf{Kreogist Mail\\ Development Documentation\\}}
+            \textcolor[rgb]{0.49,0.52,0.55}{\textbf{Software Requirement Specification}\\}
+            \textcolor[rgb]{0.49,0.52,0.55}{\textbf{\today}\\}
+        \end{spacing}
+        \vfill
+        \textcolor[rgb]{0.49,0.52,0.55}{
+            \begin{flushright}
+                Reference Number: KMKOT01.\\
+                This document is capable with IEEE Std 830-1998.
+            \end{flushright}
+        }
+        \restoregeometry
+    \end{titlepage}
+    \pagenumbering{Roman}
+    \thispagestyle{empty}
+    \newgeometry{left=2.7cm,right=2.4cm,top=3.3cm,bottom=2.5cm}
+    \begin{figure}[h!]
+        \includegraphics[width=2.5cm]{Kreogist.png}
+    \end{figure}
+    \vspace{4.5cm}
+    {
+    \noticesize
+    \begin{spacing}{0.5}
+        \noindent All information provided here is subject to change without notice. Contact Kreogist Dev Team to obtain the latest Kreogist product specifications and roadmaps.\\ \\
+        \noindent Kreogist Mail may require enabled hardware, specific software, or services activation. Check with your system manufacturer or retailer.\\ \\
+        \noindent No computer system can be absolutely secure. Kreogist does not assume any liability for lost or stolen data or systems or any damages resulting from such losses.\\ \\
+        \noindent The products described may contain design defects or errors which may cause the product to deviate from published specifications. Current characterized errata are available on request.\\ \\
+        \noindent All the other documents mentioned in this document could be found at the official site of Kreogist Dev Team. Contact Kreogist Dev Team if there's any trouble.\\ \\
+        \noindent Intel, Intel Core and the Intel logo are trademarks of Intel Corporation in the U. S. and/or other countries.\\ \\
+        \noindent Linux is a trademark of Linus Torvalds in the U. S., other countries, or both.\\ \\
+        \noindent Microsoft and Microsoft Windows are trademarks of Microsoft Corporation in the U. S. and/or other countries.\\ \\
+        \noindent Macintosh is a trademark of Apple Inc. in the U. S., other countries, or both.\\ \\
+        \noindent UNIX is a registered trademark of The Open Group in the U. S. and other countries.\\ \\
+        \noindent *Other names and brands may be claimed as the property of others.\\ \\
+    \end{spacing}
+    \vfill
+    \noindent \textbf{First Edition (Jan 2016)}\\ \\
+    \noindent This edition applies to Version 0.1 of Kreogist Mail. \\ \\
+    \noindent \textbf{Copyright {\copyright} 2016, Kreogist Dev Team. All rights reserved.}\\
+    \noindent Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.\\
+    \noindent A copy of the license is included in the section entitled "GNU Free Documentation License".
+    \noindent Note to government users restricted rights.
+    }
+    \clearpage
+    \thispagestyle{empty}
+    {
+    \intitlesize
+    \noindent Kreogist Dev Team\\ \\ \\
+    \noindent \textbf{Kreogist Mail \\
+    Development Documentation \\
+    Software Requirement Specification}\\ \\ \\
+    \today
+    }
+    \vfill
+    \hfill KMKOT01
+    \restoregeometry
+    \clearpage
+    \tableofcontents
+    \clearpage
+    \section*{Revision History}
+    \addcontentsline{toc}{section}{Revision History}
+    \begin{center}
+        \begin{longtable}{|l|l|l|l|}
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Revision}} & \multicolumn{1}{c|}{\textbf{Version}} & \multicolumn{1}{c|}{\textbf{Description}} & \multicolumn{1}{c|}{\textbf{Date}}\\
+            \hline
+            \endfirsthead
+
+            \multicolumn{3}{r}%
+            \textbf{Continued} \\
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Revision}} & \multicolumn{1}{c|}{\textbf{Version}} & \multicolumn{1}{c|}{\textbf{Description}} & \multicolumn{1}{c|}{\textbf{Date}}\\
+            \hline
+            \endhead
+
+            \endfoot
+
+            \hline
+            \endlastfoot
+
+            \hline
+            KMKOT01 & -001 & Initial release & Jan. 11th, 2016\\
+            \hline
+            KMKOT01 & -002 & Add preface section & Jan. 13th, 2016\\
+            \hline
+            KMKOT01 & -003 & Add appendix B & Jan. 14th, 2016\\
+        \end{longtable}
+    \end{center}
+    \clearpage
+    \section*{Preface}
+    \addcontentsline{toc}{section}{Preface}
+    \paragraph{} This document is an update to the specifications contained in the "Affected Documents" table below. This document is a part of product (project) Kreogist Mail.
+    \paragraph{} This document may also contain information that was not previously published.\\
+    {
+    \noindent \intitlesize \\ Affected Documents \\
+    }
+    \begin{center}
+        \begin{longtable}{|p{10cm}|c|}
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Document Title}} & \multicolumn{1}{c|}{\textbf{Document Number}} \\
+            \hline
+            \endfirsthead
+
+            \multicolumn{2}{r}%
+            \textbf{Continued} \\
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Document Title}} & \multicolumn{1}{c|}{\textbf{Document Number}} \\
+            \hline
+            \endhead
+
+            \endfoot
+
+            \hline
+            \endlastfoot
+
+            Kreogist Mail Software Design Specification & KMKOT03 \\
+        \end{longtable}
+    \end{center}
+    {
+    \noindent \intitlesize \\ Related Documents\\
+    }
+    \begin{center}
+        \begin{longtable}{|p{10cm}|c|}
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Document Title}} & \multicolumn{1}{c|}{\textbf{Document Number}} \\
+            \hline
+            \endfirsthead
+
+            \multicolumn{2}{r}%
+            \textbf{Continued} \\
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Document Title}} & \multicolumn{1}{c|}{\textbf{Document Number}} \\
+            \hline
+            \endhead
+
+            \endfoot
+
+            \hline
+            \endlastfoot
+
+            Kreogist Mail Software Project Management Plan & KMKOT02 \\
+            \hline
+            Kreogist Mail Software Quality Assurance Plan & KMKOT04 \\
+            \hline
+            Kreogist Mail Software Verification and Validation Plan & KMKOT05 \\
+        \end{longtable}
+    \end{center}
+    \clearpage
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+    \section{Introduction}
+        \paragraph{} The introduction section of this document gives a general description and provides an overview of the entire software requirements specification (SRS). It provides the scope of the software, and the most accurate definitions of the abbreviations which will be used in the following sections.
+        \subsection{Purpose}
+            \paragraph{} The purpose of this SRS is to give an exhaustive description of the requirements of Kreogist Mail (Mail) software. It will make a description of the objective and integrated declaration for system development. It will interpret the constraints, external interfaces and interactions with people, the system's hardware, other hardware, and other software as well. This document is written for schedule arrangement and development/testing organizing.
+            \paragraph{} This is a reference document for project managers, designers, developers, testers and end users.
+        \subsection{Scope}
+            \paragraph{} Mail is an E-mail management application for all mainstream desktop platform. It's a single user application. User could manage their mails in one or more E-mail accounts within a single window.
+            \paragraph{} When user launches Mail for the first time, a wizard will be popup for asking user to login their Kreogist Account. Account will store their application settings, E-mail account information, etc. to server. When the next time user login their account on a new machine, their settings will be download automatically.
+            \paragraph{} If user login their account on Mail for the first time (or sign up and login their account), wizard should ask user to add one E-mail account to application. User could add it later. But application won't work until there's one valid E-mail account.
+            \paragraph{} Mail will show the main user interface. It should display the following widgets: folder selector, mail list and mail viewer. Folder selector will provide a list which all the E-mail account contains. Mail list should display all the mail in the folder which the folder selector selected. The mail viewer will display the selected mail in the mail list. And provides the button to manage the mail, such as: reply, move to folder, delete and so on.
+            \paragraph{} Mail should also provide a simple configure dialog for user to manage all the settings of the application. User could log out and switch to another Kreogist account from the configuration panel. When user log out, their E-mail information will be removed as well, including all the mails.
+            \paragraph{} When user writing a new mail, Mail should save the draft automatically every 3 minutes. User could change the interval in configuration panel. User could also select the mail box which will be used to send the editing mail.
+            \paragraph{} Mail should provides the port for other application to launch it and asking for sending mail. It should also support the \textbf{mailto} protocol for Internet explorers to send the mail.
+        \subsection{Definitions, Acronyms, and Abbreviations}
+    		\paragraph{} Please visit Appendix \ref{appendix:definitions} and \ref{appendix:aaa}.
+        \subsection{References}
+            \begin{enumerate}[\texttt{[}1\texttt{]}.]
+                \item IEEE Software Engineering Standards Committee. "IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications", October 20, 1998.\label{ref:ieee}
+                \item Kreogist Dev Team. "Kreogist Mail Software Design Descriptions", January, 2016.\label{ref:sdd}
+                \item Free Software Foundation, "GNU Free Documentation License", See \url{http://www.gnu.org/licenses/fdl.html} (last checked January 13th, 2016), November 3, 2008.\label{ref:fdlv3}
+            \end{enumerate}
+        \subsection{Overview}
+            \paragraph{} The document surplus two chapters and appendices.
+            \paragraph{} In the second chapter, the Overall Description chapter, it will give an overview of the functionality of the product, describe the general factors that affect the product and its requirements and the application interaction with the client devices. This chapter is used to establish a context of the technique requirements specification, clarify the constraints and assumptions about this product.
+            \paragraph{} In the third chapter, the Specific Requirements chapter, it will contain all of the software requirements and describe the product in detailed and technique terms. This part is written for developers and maintainers.
+            \paragraph{} The Appendices at the end of this document provides some supporting and background information that can help readers of the SRS.
+    \clearpage
+    \section{Overall description}
+        \paragraph{} This section will give an overview of the whole Mail software, including both the client side and the server side. Application will be explained in its context to show how it interacts with user, operating systems, peripheral device and introduce the basic functionality. Constraints and assumptions for system will be presented at the end of this section.
+        \subsection{Product Perspective}
+            \paragraph{} Mail software will be divided into two parts: client application and content saving server. Client application could be set up on most desktop personal computer. Mail should support all the mainstreams operating systems. It will be used to gather the user data, save user configuration to the content server and get information from the mail server according to the information provided by user.
+            \paragraph{} Client application will have only desktop version. Mobile version will be developed as another single application.
+            \paragraph{} Content saving server part will use Kreogist User System which hosted on Bomb.cn.
+            \subsubsection{System Interfaces}\label{section:sys_interfaces}
+                \paragraph{} In order to launch this application on the client side, following are the minimum system requirements:
+                \begin{itemize}
+                    \item Graphics: OpenGL 4.0+ on UNIX based OS. DirectX 9.0 or DirectX 11 for ANGLE on Windows.
+                    \item Internet Connection: A hardwired or wireless broadband Internet access.
+                    \item Bandwidth: 512kbps(64KB/s)
+                    \item Operating System: Please visit section \ref{section:hard_interface}. i.e., \emph{Hardware Interfaces}.
+                \end{itemize}
+            \subsubsection{User Interfaces}
+            	\paragraph{} Please visit document \emph{Kreogist Mail Software Design Descriptions}$^{[\ref{ref:sdd}]}$.
+            \subsubsection{Hardware Interfaces}\label{section:hard_interface}
+                \paragraph{} Minimum hardware requirements for client:
+                \paragraph{Linux}
+                    \begin{itemize}
+                        \item CPU: 2.0GHz Intel{\textregistered} Core$^{\texttt{TM}}$ 2 Duo CPU
+                        \item Memory: 1GB DDR II 800
+                        \item Disk Space: 1GB of available storage
+                        \item OS: Linux kernel 3.13 with a mainstream desktop environment installed Qt 5.5, e.g. KDE Plasma 5, Gnome 3.
+                    \end{itemize}
+                \paragraph{OS X}
+                    \begin{itemize}
+                        \item CPU: 2.0GHz Intel{\textregistered} Core$^{\texttt{TM}}$ Series Duo CPU
+                        \item Memory: 1GB DDR II 800
+                        \item Disk Space: 1GB of available storage
+                        \item OS: OS X Mountain Lion
+                    \end{itemize}
+                    Your Mac should be no older than the following models:
+                    \begin{itemize}
+                        \item MacBook Air (2012)
+                        \item MacBook Pro (2012)
+                        \item iMac (2012)
+                        \item Mac mini (2012)
+                        \item Mac Pro (Late 2013)
+                    \end{itemize}
+                \paragraph{Windows}
+                    \begin{itemize}
+                        \item CPU: 2.5GHz Quad Intel{\textregistered} Core$^{\texttt{TM}}$ i5 CPU
+                        \item Memory: 2GB DDR II 800
+                        \item Disk Space: 2GB of available storage
+                        \item OS: Windows XP Services Pack 3, Windows Vista Service Pack 1, Windows 7 or later.
+                    \end{itemize}
+            \subsubsection{Software Interfaces}\label{section:soft_interface}
+                \begin{enumerate}
+                    \item {Qt 5.5, the following module must be installed:
+                        \begin{itemize}
+                            \item Core
+                            \item Gui
+                            \item Network
+                            \item Widgets
+                            \item All the official plugins for current platform
+                        \end{itemize}}
+                \end{enumerate}
+            \subsubsection{Communications Interfaces}
+                \paragraph{} Nowadays, mainstream E-mail solutions are divided into two groups: Internet Mail Access Protocol (IMAP) and Post Office Protocol - Version 3 (POP3). Mail should support both of them for receiving E-mail. All the mainstream E-mail solutions are supporting Simple Mail Transfer Protocol (SMTP) for sending E-mail. Mail should also support it.
+                \paragraph{} Use QNetworkAccessManager to realize a high-level API for IMAP/POP3 and SMTP, all the other module shouldn't call the QNetworkAccessManager or any low level API classes directly.
+            \subsubsection{Memory}
+                \paragraph{} Please refer section \ref{section:hard_interface} i.e., \emph{Hardware Interfaces}.
+            \subsubsection{Operations}
+            	\paragraph{} Please visit document \emph{Kreogist Mail Software Design Descriptions}$^{[\ref{ref:sdd}]}$.
+        \subsection{Product Functions}
+            \begin{center}
+                \begin{longtable}{|c|p{10.1cm}|}
+                    \caption[Operation List of Mail]{Operation List of Mail} \label{table:operation_list} \\
+                    \hline
+                    \multicolumn{1}{|c|}{S.No.} & \multicolumn{1}{c|}{Particulars}\\
+                    \hline
+                    \endfirsthead
+
+                    \multicolumn{2}{r}%
+                    {\textbf{Continued}} \\
+                    \hline
+                    \multicolumn{1}{|c|}{S.No.} & \multicolumn{1}{c|}{Particulars} \\
+                    \hline
+                    \endhead
+
+                    \endfoot
+
+                    \hline
+                    \endlastfoot
+
+                    1 & Kreogist Account registration\\
+                    \hline
+                    2 & Kreogist Account login\\
+                    \hline
+                    3 & E-mail account management (Added, Modified, Removed)\\
+                    \hline
+                    4 & Mail receiving (IMAP/POP3, Automatic/Manual)\\
+                    \hline
+                    5 & Mail display\\
+                    \hline
+                    6 & Mail editing\\
+                    \hline
+                    7 & Mail sending (SMTP)\\
+                    \hline
+                    8 & E-mail account and password automatically backup
+                \end{longtable}
+            \end{center}
+        \subsection{User Characteristics}
+        	\paragraph{} The mainly user of Mail software should be:
+				\begin{enumerate}
+					\item User may have a low education level. Our user may only know the basic computer operation. e.g. click, double click, type and knows the basic technique words.
+					\item User must be familiar with its E-mail account, which means user should know the E-mail account, password, and all the basic operation of E-mail system.
+					\item They shouldn't ever use Mail application before, so they couldn't have any experience on the Mail software.
+					\item They may have none of technical expertise on any parts of E-mail system.
+				\end{enumerate}
+        \subsection{Constraints}
+        	\paragraph{} Since, the proposed Mail application to be developed using open-source environment/projects/technology, therefore following are limitations pertaining to these selected technology:
+			\begin{itemize}
+				\item More developer-oriented;
+				\item Some unsolved bugs in the framework;
+				\item Lack of professional official support;
+				\item Documentation is not completed.
+			\end{itemize}
+        \subsection{Assumptions and Dependencies}
+        	\paragraph{} Mail should always be used on terminal devices which have enough performance. If the device doesn't have enough hardware resources for Mail, e.g. system might allocated resources for other applications, Mail may not work as intended or even at all.
+			\paragraph{} Mobile computer should be well charged. If device runs out of battery, the latest data process on the device which still not have a chance to update will totally lost.
+			\paragraph{} Users should be familiar with their device. They should know the basic operation to their device. e.g. clicking with their track pad, typing with the fixed or touch keyboard and turn on the special wireless switches.
+            \paragraph{} Mail should be deployed on terminal device with all the Qt runtime library on it.
+	\clearpage
+    \section{Specific Requirements}
+    	\paragraph{} The requirements in this section specify the required reliability, availability, security and maintainability of the software system.
+        \subsection{External Interfaces}
+        	\paragraph{} Kreogist Mail doesn't need any special external interfaces.
+        \subsection{Functions}
+        	\begin{enumerate}
+				\item {\textbf{Kreogist Account registration} \\
+				       We suppose all the users register a Kreogist Account. Kreogist Account could automatically backup your E-mail account settings, encrypt it and upload to Kreogist server.}
+				\item {\textbf{Kreogist Account login} \\
+				       When user login the Kreogist Account, Mail will download the E-mail account and application configuration from server, and set it up automatically for user. They won't need to do all the configuration again.}
+				\item {\textbf{E-mail account management} \\
+				       User could create a new mail, modified a draft mail and remove all kinds of mail from their mail folder.}
+				\item {\textbf{Mail receiving} \\
+				       Mail could use IMAP or POP3 protocol to download mail from your E-mail server. It will update your mail box every 5 minutes. User could also update it manually by clicking a button. The waiting time will be reset if mail list updated manually.}
+				\item {\textbf{Mail display} \\
+				       Mail will display the selected E-mail file. It should support rich-text format and HTML format E-mail.}
+				\item {\textbf{Mail editing} \\
+				       User could edit any mail and resend it. User couldn't change the original mail content.}
+				\item {\textbf{Mail sending} \\
+				       User could send E-mail via SMTP protocol.}
+				\item {\textbf{E-mail account and password automatically backup} \\
+				       When our user login with its Kreogist Account, Mail will automatically encrypt the E-mail account and password and upload it to Kreogist Account server. User could block this backup in the configuration panel.}
+			\end{enumerate}
+        \subsection{Performance}
+        	\paragraph{} The requirements in this section provide a detailed specification of the player interaction with the software and measurements placed on the system performance.
+	        \paragraph{} Mail should complete the following listed items:
+	        \begin{enumerate}
+	        	\item 99\% of input operation should be processed and responded on user interface within 1 second.
+		        \item 90\% of Internet operation should be responded on user interface within 5 seconds.
+		        \item 80\% of online operation should be completed under minimal requirement within 30 seconds.
+	        \end{enumerate}
+        \subsection{Logical Database}
+        	\paragraph{} This section specifies the logical requirements for any information that is to be placed into a database.
+        	\paragraph{} All the E-mail information will be stored at local hard drive. We will use JSON format object to save in a UTF-8 format file. Read and write the file using \texttt{QJsonDocument} class.
+	        \paragraph{} E-mail account and password information will be stored as JSON format. The raw data will be encrypt with user object via AES-256 or better.
+        \subsection{Design Constraints}
+        	\paragraph{Framework} Mail shall be a stand-alone application running on mainstream desktop operating system. It should be developed using open source frameworks as mentioned in section \ref{section:soft_interface}. i.e., \emph{Software Interfaces}.
+			\paragraph{Memory Usage} The amount of system memory occupied by Mail should be limited.\\
+				\emph{Must} No more than 100MB without any E-mail loading.\\
+				\emph{Plan} No more than 70MB without any E-mail loading.\\
+				\emph{Wish} No more than 30MB without any E-mail loading.
+			\paragraph{Disk Space} The need of hard drive space of Mail should be limited.\\
+				\emph{Must} No more than 100MB without any E-mail or cached data.\\
+				\emph{Plan} No more than 70MB without any E-mail or cached data.\\
+				\emph{Wish} No more than 30MB without any E-mail or cached data.
+        \subsection{Software System Attributes}
+        	\paragraph{} This section describes the required reliability, availability, security and maintainability of the client and the server side application.
+            \subsubsection{Reliability}
+            	\paragraph{E-mail Receiving} Mail should display all the E-mails received from the server correctly. But we cannot guarantee the network connections condition. So we have to suppose that there's nothing wrong with the Internet connection and the E-mail server.\\
+				\emph{Must} 50\% of E-mail files should be received correctly.\\
+				\emph{Plan} 90\% of E-mail files should be received correctly.\\
+				\emph{Wish} 100\% of E-mail files should be received correctly.
+				\paragraph{E-mail Display} Mail should display all the mails correctly.\\
+				\emph{Must} 100\% of the received E-mail files should be display correctly.\\
+				\emph{Plan} 100\% of the received E-mail files should be display correctly.\\
+				\emph{Wish} 100\% of the received E-mail files should be display correctly.
+            \subsubsection{Availability}
+            	\paragraph{} Mail should be available throughout all E-mail sending process.
+				\paragraph{} When the Internet connections is valid, Mail should always be available for E-mail receiving and user data synchronism.
+            \subsubsection{Security}
+            	\paragraph{} Kreogist Account system will encrypt user's password via MD5 and SHA-3. We won't stored the raw password.
+				\paragraph{} User's E-mail account and password will be encrypt separately. E-mail account will be encrypt with AES-256 bit. Password will be encrypt as the following steps:
+				\begin{enumerate}
+					\item First encrypt the raw password with Elliptic Curve Cryptography (ECC), called N1.
+					\item Then append character '$|$', SHA-3 encrypt result, another '$|$' and MD5 encrypt result after N1, called N2.
+					\item Encrypt N2 with AES-512 bit, called N3.
+				\end{enumerate}
+				\paragraph{} Then upload the N3 to Kreogist Account server. When we download the N3 from the server, we have to decrypt the data with the following steps:
+				\begin{enumerate}
+					\item Decrypt N3 with AES-512 bit. We could get N2.
+					\item Separate N2 with character '$|$', encrypt first part with SHA-3 and MD5. Check the result with the second and the third part. If any of them is not the same, decrypt failed.
+					\item Decrypt the first part (N1) with ECC.
+				\end{enumerate}
+            \subsubsection{Maintainability}
+            	\paragraph{} The client side application should be easy to extend. The code should be written in a way that it favors implementation of new functions.
+				\paragraph{} None of user data will be fixed in code. There should not be any fixed binary image, sound or video data inside the code. All the multimedia files should be placed in a single resource file.
+            \subsubsection{Portability}
+            	\paragraph{} Mail should be portable with Windows, OS X and mainstream GUI Linux for desktop version. All of these platforms should be capable with the minimal system requirements. To know more about the requirements, please refer section \ref{section:hard_interface}. i.e., \emph{Hardware Interfaces}.
+	\clearpage
+    \appendix
+    \addcontentsline{toc}{section}{Appendices}\markboth{APPENDICES}{}
+    \begin{subappendices}
+    	\section{Definitions}\label{appendix:definitions}
+			\paragraph{} The following table defines all the basic concepts in this document about Mail. Definitions given below are specific to this document and may not be identical to definitions of these terms in common use. The purpose of this part is to help users in understanding the document and the requirements of the system.
+		\clearpage
+		\section{Acronyms and Abbreviations}\label{appendix:aaa}
+			\paragraph{} The following table lists the acronyms and abbreviations used in this document.
+            \begin{center}
+                \begin{longtable}{|p{3cm}|p{9.1cm}|}
+                    \caption[Definitions]{Acronyms \& Abbreviations} \label{grid:abbv} \\
+                    \hline
+                    \multicolumn{1}{|c|}{Acronyms} & \multicolumn{1}{c|}{Definition}\\
+                    \hline
+                    \endfirsthead
+
+                    \multicolumn{2}{r}%
+                    {\textbf{Continued}} \\
+                    \hline
+                    \multicolumn{1}{|c|}{Acronyms} & \multicolumn{1}{c|}{Definition} \\
+                    \hline
+                    \endhead
+
+                    \endfoot
+
+                    \hline
+                    \endlastfoot
+
+                    AES          & Advanced Encryption Standard\\
+                    \hline
+                    ANGLE        & Almost Native Graphics Layer Engine\\
+                    \hline
+                    API          & Application Programming Interface\\
+                    \hline
+                    CPU          & Central Processing Unit\\
+                    \hline
+                    DDR          & Double Data Rate SDRAM\\
+                    \hline
+                    ECC          & Elliptic Curve Cryptography\\
+                    \hline
+                    EDGE         & Enhanced Data rates for GSM Evolution\\
+                    \hline
+                    e.g.         & for example\\
+                    \hline
+                    GB           & Gigabytes (10,7374,1824 Bytes)\\
+                    \hline
+                    GNU          & GNU is Not Unix\\
+                    \hline
+                    GSM          & Global System for Mobile Communications\\
+                    \hline
+                    HTTP         & Hypertext Transfer Protocol\\
+                    \hline
+                    HTTPS        & HTTP over TLS\\
+                    \hline
+                    i.e.         & that is\\
+                    \hline
+                    IEEE         & Institute of Electrical and Electronics Engineers\\
+                    \hline
+                    IMAP         & Internet Mail Access Protocol\\
+                    \hline
+                    JSON         & JavaScript Object Notation\\
+                    \hline
+                    KB/s         & Kilo bytes per second\\
+                    \hline
+                    kbps         & Kilo bit per second\\
+                    \hline
+                    MB           & Million Bytes (104,8576 Bytes)\\
+                    \hline
+                    MB/s         & Million bytes per second\\
+                    \hline
+                    Mbps         & Million bit per second\\
+                    \hline
+                    MD5          & MD5 message-digest algorithm\\
+                    \hline
+                    OS           & Operating System\\
+                    \hline
+                    POP3         & Post Office Protocol - Version 3\\
+                    \hline
+                    SDRAM        & Synchronous Dymanic Random-Access Memory\\
+                    \hline
+                    SHA-3        & Secure Hash Algorithm 3\\
+                    \hline
+                    SMTP         & Simple Mail Transfer Protocol\\
+                    \hline
+                    SRS          & Software Requirements Specifications\\
+                    \hline
+                    TSL          & Transport Layer Security\\
+                    \hline
+                    W-CDMA       & Wideband Code Division Multiple Access\\
+                    \hline
+                    UMTS         & Universal Mobile Telecommunications System\\
+                \end{longtable}
+            \end{center}
+    \end{subappendices}
+\end{document}

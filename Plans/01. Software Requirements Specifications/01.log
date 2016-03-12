@@ -1,0 +1,563 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.19)  19 JAN 2016 22:48
+entering extended mode
+**D:/文档/Creartist/Mail/Documents/01.*Software*Requirements*Specifications/0
+1.tex
+
+("D:/文档/Creartist/Mail/Documents/01. Software Requirements Specifications/0
+1.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(D:\Programs\CTEX\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(D:\Programs\CTEX\MiKTeX\tex\latex\base\size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(D:\Programs\CTEX\MiKTeX\tex\latex\graphics\color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(D:\Programs\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+(D:\Programs\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(D:\Programs\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(D:\Programs\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+(D:\Programs\CTEX\MiKTeX\tex\latex\setspace\setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(D:\Programs\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\Programs\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(D:\Programs\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\Programs\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(D:\Programs\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(D:\Programs\CTEX\MiKTeX\tex\latex\geometry\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(D:\Programs\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(D:\Programs\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(D:\Programs\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen105
+\Gm@wd@mp=\dimen106
+\Gm@odd@mp=\dimen107
+\Gm@even@mp=\dimen108
+\Gm@layoutwidth=\dimen109
+\Gm@layoutheight=\dimen110
+\Gm@layouthoffset=\dimen111
+\Gm@layoutvoffset=\dimen112
+\Gm@dimlist=\toks15
+
+(D:\Programs\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg))
+(D:\Programs\CTEX\MiKTeX\tex\latex\tools\enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks16
+)
+(D:\Programs\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(D:\Programs\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(D:\Programs\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen113
+))
+(D:\Programs\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen114
+)
+(D:\Programs\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen115
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks18
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks19
+\eqnshift@=\dimen116
+\alignsep@=\dimen117
+\tagshift@=\dimen118
+\tagwidth@=\dimen119
+\totwidth@=\dimen120
+\lineht@=\dimen121
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(D:\Programs\CTEX\MiKTeX\tex\latex\tools\multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count103
+\mult@box=\box28
+\multicol@leftmargin=\dimen122
+\c@unbalance=\count104
+\c@collectmore=\count105
+\doublecol@number=\count106
+\multicoltolerance=\count107
+\multicolpretolerance=\count108
+\full@width=\dimen123
+\page@free=\dimen124
+\premulticols=\dimen125
+\postmulticols=\dimen126
+\multicolsep=\skip46
+\multicolbaselineskip=\skip47
+\partial@page=\box29
+\last@line=\box30
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\c@columnbadness=\count109
+\c@finalcolumnbadness=\count110
+\last@try=\dimen127
+\multicolovershoot=\dimen128
+\multicolundershoot=\dimen129
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
+\multicol@sort@counter=\count111
+)
+(D:\Programs\CTEX\MiKTeX\tex\latex\multirow\multirow.sty
+\bigstrutjot=\dimen130
+)
+(D:\Programs\CTEX\MiKTeX\tex\latex\tools\longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip48
+\LTright=\skip49
+\LTpre=\skip50
+\LTpost=\skip51
+\LTchunksize=\count112
+\LTcapwidth=\dimen131
+\LT@head=\box54
+\LT@firsthead=\box55
+\LT@foot=\box56
+\LT@lastfoot=\box57
+\LT@cols=\count113
+\LT@rows=\count114
+\c@LT@tables=\count115
+\c@LT@chunks=\count116
+\LT@p@ftn=\toks22
+)
+(D:\Programs\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(D:\Programs\CTEX\MiKTeX\tex\latex\appendix\appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count117
+\c@@ppsavesec=\count118
+\c@@ppsaveapp=\count119
+)
+("D:\文档\Creartist\Mail\Documents\01. Software Requirements Specifications\0
+1.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+ (D:\Programs\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count120
+\scratchdimen=\dimen132
+\scratchbox=\box58
+\nofMPsegments=\count121
+\nofMParguments=\count122
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen133
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
+\everyMPtoPDFconversion=\toks24
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-7.86334pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(76.82234pt, 452.3991pt, 68.28644pt)
+* v-part:(T,H,B)=(93.89418pt, 680.02078pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.3991pt
+* \textheight=680.02078pt
+* \oddsidemargin=4.55235pt
+* \evensidemargin=4.55235pt
+* \topmargin=-15.37581pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<Kreogist.png, id=1, 104.39pt x 117.43875pt>
+File: Kreogist.png Graphic file (type png)
+ <use Kreogist.png>
+Package pdftex.def Info: Kreogist.png used on input line 40.
+(pdftex.def)             Requested size: 104.38972pt x 117.43845pt.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <70> not available
+(Font)              size <24.88> substituted on input line 43.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <70> not available
+(Font)              size <24.88> substituted on input line 43.
+
+[1
+
+
+{D:/Programs/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}} <D:
+/文档/Creartist/Mail/Documents/01. Software Requirements Specifications/Kreog
+ist.png>]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(76.82234pt, 452.3991pt, 68.28644pt)
+* v-part:(T,H,B)=(93.89418pt, 680.02078pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.3991pt
+* \textheight=680.02078pt
+* \oddsidemargin=4.55235pt
+* \evensidemargin=4.55235pt
+* \topmargin=-15.37581pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: Kreogist.png Graphic file (type png)
+ <use Kreogist.png>
+Package pdftex.def Info: Kreogist.png used on input line 60.
+(pdftex.def)             Requested size: 71.13188pt x 80.02751pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--77
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 81.
+(D:\Programs\CTEX\MiKTeX\tex\latex\base\omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 81.
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--86
+
+ []
+
+[1
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 90--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--96
+
+ []
+
+[2
+
+]
+("D:\文档\Creartist\Mail\Documents\01. Software Requirements Specifications\0
+1.toc")
+\tf@toc=\write3
+ [3
+
+
+]
+Underfull \vbox (badness 10000) detected at line 129
+ []
+
+[4
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 135--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
+
+ []
+
+[5
+
+] [1
+
+] [2]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 229.
+ [3
+
+] [4] [5] [6] [7
+
+] [8] [9] [10] [11
+
+] [12
+
+]
+("D:\文档\Creartist\Mail\Documents\01. Software Requirements Specifications\0
+1.aux")
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 45.12pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2749 strings out of 495354
+ 36358 string characters out of 3183355
+ 116308 words of memory out of 3000000
+ 5885 multiletter control sequences out of 15000+200000
+ 11196 words of font info for 41 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 27i,6n,20p,576b,298s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Programs/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/Progr
+ams/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Programs/CTEX/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Programs/CTEX/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><D:/Programs/CTEX/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr17.pfb><D:/Programs/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+8.pfb><D:/Programs/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Pr
+ograms/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Programs/CTEX/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><D:/Programs/CTEX/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on 01.pdf (18 pages, 165940 bytes).
+PDF statistics:
+ 103 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+

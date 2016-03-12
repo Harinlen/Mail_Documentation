@@ -1,0 +1,82 @@
+\contentsline {section}{Revision History}{III}
+\contentsline {section}{Preface}{IV}
+\contentsline {paragraph}{}{IV}
+\contentsline {paragraph}{}{IV}
+\contentsline {section}{Table of Contents}{V}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {section}{\numberline {2}Reference documents}{1}
+\contentsline {section}{\numberline {3}Management}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {subsection}{\numberline {3.1}Organization}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {subsection}{\numberline {3.2}Tasks}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {subsection}{\numberline {3.3}Responsibilities}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {section}{\numberline {4}Documentation}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {section}{\numberline {5}Standards, practices, conventions, and metrics}{4}
+\contentsline {subsection}{\numberline {5.1}Documentation standards}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {subsection}{\numberline {5.2}Design standards}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {subsection}{\numberline {5.3}Coding standards}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {subsection}{\numberline {5.4}Comment standards}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {subsection}{\numberline {5.5}Testing standards}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {subsection}{\numberline {5.6}Metrics}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {subsection}{\numberline {5.7}Compliance monitoring}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {section}{\numberline {6}Review}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {section}{\numberline {7}Test}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {section}{\numberline {8}Problem reporting and corrective action}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{Document problems}{10}
+\contentsline {paragraph}{Code problems}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{Problem reporting procedure}{11}
+\contentsline {paragraph}{Problem solving procedure}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{Change in requirements of the customer}{11}
+\contentsline {paragraph}{}{12}
+\contentsline {section}{\numberline {9}Tools, techniques, and methodologies}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {section}{\numberline {10}Code control}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {section}{\numberline {11}Media control}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {section}{\numberline {12}Supplier control}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {section}{\numberline {13}Records collection, maintenance and retention}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {section}{\numberline {14}Training}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {section}{\numberline {15}Risk management}{14}
+\contentsline {paragraph}{}{14}

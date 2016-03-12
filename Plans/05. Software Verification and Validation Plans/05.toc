@@ -1,0 +1,73 @@
+\contentsline {section}{Revision History}{III}
+\contentsline {section}{Preface}{IV}
+\contentsline {paragraph}{}{IV}
+\contentsline {paragraph}{}{IV}
+\contentsline {section}{Table of Contents}{V}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {subsection}{\numberline {1.1}Purpose}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {subsection}{\numberline {1.2}Scope}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {subsection}{\numberline {1.3}Objectives}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {subsection}{\numberline {1.4}Applicability}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {subsection}{\numberline {1.5}Waivers}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {section}{\numberline {2}Referenced Documents}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {section}{\numberline {3}Definitions}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {section}{\numberline {4}V\&V overview}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {subsection}{\numberline {4.1}Organization}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {subsection}{\numberline {4.2}Master schedule}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {subsection}{\numberline {4.3}Software integrity level scheme}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {subsection}{\numberline {4.4}Resources summary}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {subsection}{\numberline {4.5}Responsibilities}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {subsection}{\numberline {4.6}Tools, techniques, and methods}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {section}{\numberline {5}V\&V processes}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {subsection}{\numberline {5.1}Dependencies}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {subsection}{\numberline {5.2}Stability Verification}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{Software Requirement}{7}
+\contentsline {paragraph}{Minimal Hardware Requirement}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{8}
+\contentsline {subsection}{\numberline {5.3}Function Verification}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {subsection}{\numberline {5.4}Quality Verification}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {subsection}{\numberline {5.5}Summary}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {section}{\numberline {6}V\&V reporting requirements}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {section}{\numberline {7}V\&V administrative requirements}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {subsection}{\numberline {7.1}Anomaly resolution and reporting}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {subsection}{\numberline {7.2}Control procedures}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {subsection}{\numberline {7.3}Standards, practices, and conventions}{9}
+\contentsline {paragraph}{}{9}

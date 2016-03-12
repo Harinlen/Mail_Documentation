@@ -1,0 +1,241 @@
+\contentsline {section}{Signature}{III}
+\contentsline {section}{Revision History}{IV}
+\contentsline {section}{Preface}{V}
+\contentsline {paragraph}{}{V}
+\contentsline {paragraph}{}{V}
+\contentsline {section}{Table of Contents}{VI}
+\contentsline {section}{List of Figures}{VIII}
+\contentsline {section}{List of Tables}{IX}
+\contentsline {section}{\numberline {1}Overview}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {subsection}{\numberline {1.1}Project Summary}{1}
+\contentsline {subsubsection}{\numberline {1.1.1}Purpose, Scope and Objectives}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {subsubsection}{\numberline {1.1.2}Assumptions and Constraints}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {subsubsection}{\numberline {1.1.3}Project Deliverables}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {subsubsection}{\numberline {1.1.4}Schedule and Budget Summary}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {subsection}{\numberline {1.2}Evolution of the Plan}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {section}{\numberline {2}References}{4}
+\contentsline {section}{\numberline {3}Definitions}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {section}{\numberline {4}Project Organization}{6}
+\contentsline {subsection}{\numberline {4.1}External Interfaces}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {subsection}{\numberline {4.2}Internal structure, Roles and Responsibilities}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{Project Manager}{6}
+\contentsline {paragraph}{Quality Assurance Manager}{7}
+\contentsline {paragraph}{Team Leader}{7}
+\contentsline {paragraph}{Team Member}{7}
+\contentsline {section}{\numberline {5}Managerial Process Plans}{8}
+\contentsline {subsection}{\numberline {5.1}Start-up Plan}{8}
+\contentsline {subsubsection}{\numberline {5.1.1}Estimation Plan}{8}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {subsubsection}{\numberline {5.1.2}Staffing plan}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {subsubsection}{\numberline {5.1.3}Resource Acquisition Plan}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {subsection}{\numberline {5.2}Work Plan}{12}
+\contentsline {subsubsection}{\numberline {5.2.1}Work activities}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {subsubsection}{\numberline {5.2.2}Schedule Allocation}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {subsection}{\numberline {5.3}Control Plan}{13}
+\contentsline {subsubsection}{\numberline {5.3.1}Requirements Control Plan}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{14}
+\contentsline {paragraph}{}{14}
+\contentsline {paragraph}{}{14}
+\contentsline {paragraph}{}{14}
+\contentsline {paragraph}{}{14}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {subsubsection}{\numberline {5.3.2}Schedule Control Plan}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {subsubsection}{\numberline {5.3.3}Quality Control Plan}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {subsubsection}{\numberline {5.3.4}Reporting Plan}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{18}
+\contentsline {paragraph}{}{18}
+\contentsline {subsubsection}{\numberline {5.3.5}Metrics Collection Plan}{18}
+\contentsline {paragraph}{}{18}
+\contentsline {paragraph}{}{18}
+\contentsline {paragraph}{}{18}
+\contentsline {paragraph}{}{19}
+\contentsline {paragraph}{}{19}
+\contentsline {subsection}{\numberline {5.4}Risk Management Plan}{19}
+\contentsline {paragraph}{}{19}
+\contentsline {paragraph}{}{19}
+\contentsline {paragraph}{}{19}
+\contentsline {subsubsection}{\numberline {5.4.1}Risks with respect to the work to be done}{19}
+\contentsline {paragraph}{}{19}
+\contentsline {paragraph}{Probability}{19}
+\contentsline {paragraph}{Prevention}{19}
+\contentsline {paragraph}{Correction}{19}
+\contentsline {paragraph}{Impact}{19}
+\contentsline {paragraph}{Probability}{20}
+\contentsline {paragraph}{Prevention}{20}
+\contentsline {paragraph}{Correction}{20}
+\contentsline {paragraph}{Impact}{20}
+\contentsline {paragraph}{Probability}{20}
+\contentsline {paragraph}{Prevention}{20}
+\contentsline {paragraph}{Correction}{20}
+\contentsline {paragraph}{Impact}{20}
+\contentsline {paragraph}{Probability}{20}
+\contentsline {paragraph}{Prevention}{20}
+\contentsline {paragraph}{Correction}{20}
+\contentsline {paragraph}{Impact}{20}
+\contentsline {paragraph}{Probability}{20}
+\contentsline {paragraph}{Prevention}{21}
+\contentsline {paragraph}{Correction}{21}
+\contentsline {paragraph}{Impact}{21}
+\contentsline {subsubsection}{\numberline {5.4.2}Risks with respect to management}{21}
+\contentsline {paragraph}{Probability}{21}
+\contentsline {paragraph}{Prevention}{21}
+\contentsline {paragraph}{Correction}{21}
+\contentsline {paragraph}{Impact}{21}
+\contentsline {subsubsection}{\numberline {5.4.3}Risks with respect to resources}{21}
+\contentsline {paragraph}{Probability}{21}
+\contentsline {paragraph}{Prevention}{21}
+\contentsline {paragraph}{Correction}{21}
+\contentsline {paragraph}{Impact}{21}
+\contentsline {subsubsection}{\numberline {5.4.4}Risks with respect to the customer}{21}
+\contentsline {paragraph}{Probability}{21}
+\contentsline {paragraph}{Prevention}{21}
+\contentsline {paragraph}{Correction}{22}
+\contentsline {paragraph}{Impact}{22}
+\contentsline {paragraph}{Probability}{22}
+\contentsline {paragraph}{Prevention}{22}
+\contentsline {paragraph}{Correction}{22}
+\contentsline {paragraph}{Impact}{22}
+\contentsline {subsubsection}{\numberline {5.4.5}Summary}{22}
+\contentsline {paragraph}{}{22}
+\contentsline {subsection}{\numberline {5.5}Project Closeout Plan}{22}
+\contentsline {paragraph}{}{22}
+\contentsline {paragraph}{}{22}
+\contentsline {paragraph}{}{23}
+\contentsline {section}{\numberline {6}Technical Process Plans}{24}
+\contentsline {subsection}{\numberline {6.1}Process Model}{24}
+\contentsline {paragraph}{}{24}
+\contentsline {paragraph}{}{24}
+\contentsline {paragraph}{}{24}
+\contentsline {paragraph}{}{25}
+\contentsline {subsection}{\numberline {6.2}Methods, Tools, and Techniques}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{26}
+\contentsline {paragraph}{}{26}
+\contentsline {paragraph}{}{26}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{28}
+\contentsline {subsection}{\numberline {6.3}Infrastructure Plan}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {subsection}{\numberline {6.4}Product Acceptance Plan}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{29}
+\contentsline {paragraph}{}{29}
+\contentsline {paragraph}{}{29}
+\contentsline {paragraph}{}{29}
+\contentsline {section}{\numberline {7}Supporting Process Plans}{30}
+\contentsline {subsection}{\numberline {7.1}Verification and Validation Plan}{30}
+\contentsline {paragraph}{}{30}
+\contentsline {paragraph}{}{30}
+\contentsline {paragraph}{}{30}
+\contentsline {paragraph}{}{30}
+\contentsline {paragraph}{}{30}
+\contentsline {paragraph}{}{30}
+\contentsline {paragraph}{}{30}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{32}
+\contentsline {subsection}{\numberline {7.2}Documentation Plan}{32}
+\contentsline {paragraph}{}{32}
+\contentsline {paragraph}{}{32}
+\contentsline {subsection}{\numberline {7.3}Quality Assurance Plan}{33}
+\contentsline {paragraph}{}{33}
+\contentsline {paragraph}{}{33}
+\contentsline {paragraph}{}{33}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {subsection}{\numberline {7.4}Reviews and Audits Plan}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {subsection}{\numberline {7.5}Problem Resolution Plan}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{37}
+\contentsline {paragraph}{}{37}
+\contentsline {subsection}{\numberline {7.6}Process Improvement Plan}{38}
+\contentsline {paragraph}{}{38}
+\contentsline {paragraph}{}{38}
+\contentsline {paragraph}{}{39}
+\contentsline {paragraph}{}{39}
+\contentsline {paragraph}{}{39}
+\contentsline {section}{\numberline {8}Additional Plans}{39}
+\contentsline {paragraph}{}{39}
+\contentsline {section}{Appendices}{40}
+\contentsline {section}{\numberline {A}Organization Charts}{40}

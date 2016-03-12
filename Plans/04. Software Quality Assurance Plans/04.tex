@@ -1,0 +1,520 @@
+\documentclass[11pt,a4paper]{article}
+
+%Text Color
+\usepackage{color}
+
+%Paragraph Spacing
+\usepackage{setspace}
+
+%Graphics
+\usepackage{graphicx}
+
+%Page Margins
+\usepackage{geometry}
+
+%Basic Staff
+\usepackage{enumerate}
+\usepackage{amsmath}
+
+%Long Table
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{longtable}
+
+%Codes
+\usepackage{listings}
+\lstset{%Coding Style
+    language=C++
+}
+
+%URL link
+\usepackage{url}
+
+%Appendix
+\usepackage[toc,page,title,titletoc,header]{appendix}
+
+%Font sizes
+\newcommand{\titlesize}{\fontsize{70pt}{\baselineskip}\selectfont}
+\newcommand{\noticesize}{\fontsize{10pt}{\baselineskip}\selectfont}
+\newcommand{\intitlesize}{\fontsize{17pt}{\baselineskip}\selectfont}
+\newcommand{\licensetitle}{\fontsize{12pt}{\baselineskip}\selectfont}
+\begin{document}
+    \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+    \begin{titlepage}
+        \newgeometry{left=2.7cm,right=2.4cm,top=3.3cm,bottom=2.5cm}
+        \begin{figure}[h!]
+            \hfill\includegraphics{Kreogist.png}
+        \end{figure}
+        \begin{spacing}{2.0}
+            \textcolor[rgb]{0.49,0.52,0.55}{\titlesize \\ \textbf{Kreogist Mail\\ Development Documentation\\}}
+            \textcolor[rgb]{0.49,0.52,0.55}{\textbf{Software Quality Assurance Plans}\\}
+            \textcolor[rgb]{0.49,0.52,0.55}{\textbf{\today}\\}
+        \end{spacing}
+        \vfill
+        \textcolor[rgb]{0.49,0.52,0.55}{
+            \begin{flushright}
+                Reference Number: KMKOT04.\\
+                This document is capable with IEEE Std 730-2002.
+            \end{flushright}
+        }
+        \restoregeometry
+    \end{titlepage}
+    \pagenumbering{Roman}
+    \thispagestyle{empty}
+    \newgeometry{left=2.7cm,right=2.4cm,top=3.3cm,bottom=2.5cm}
+    \begin{figure}[h!]
+        \includegraphics[width=2.5cm]{Kreogist.png}
+    \end{figure}
+    \vspace{4.5cm}
+    {
+    \noticesize
+    \begin{spacing}{0.5}
+        \noindent All information provided here is subject to change without notice. Contact Kreogist Dev Team to obtain the latest Kreogist product specifications and roadmaps.\\ \\
+        \noindent Kreogist Mail may require enabled hardware, specific software, or services activation. Check with your system manufacturer or retailer.\\ \\
+        \noindent No computer system can be absolutely secure. Kreogist does not assume any liability for lost or stolen data or systems or any damages resulting from such losses.\\ \\
+        \noindent The products described may contain design defects or errors which may cause the product to deviate from published specifications. Current characterized errata are available on request.\\ \\
+        \noindent All the other documents mentioned in this document could be found at the official site of Kreogist Dev Team. Contact Kreogist Dev Team if there's any trouble.\\ \\
+        \noindent Intel, Intel Core and the Intel logo are trademarks of Intel Corporation in the U. S. and/or other countries.\\ \\
+        \noindent Linux is a trademark of Linus Torvalds in the U. S., other countries, or both.\\ \\
+        \noindent Microsoft and Microsoft Windows are trademarks of Microsoft Corporation in the U. S. and/or other countries.\\ \\
+        \noindent Macintosh is a trademark of Apple Inc. in the U. S., other countries, or both.\\ \\
+        \noindent UNIX is a registered trademark of The Open Group in the U. S. and other countries.\\ \\
+        \noindent *Other names and brands may be claimed as the property of others.\\ \\
+    \end{spacing}
+    \vfill
+    \noindent \textbf{First Edition (Jan 2016)}\\ \\
+    \noindent This edition applies to Version 0.1 of Kreogist Mail. \\ \\
+    \noindent \textbf{Copyright {\copyright} 2016, Kreogist Dev Team. All rights reserved.}\\
+    \noindent Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.\\
+    \noindent A copy of the license is included in the section entitled "GNU Free Documentation License".
+    \noindent Note to government users restricted rights.
+    }
+    \clearpage
+    \thispagestyle{empty}
+    {
+    \intitlesize
+    \noindent Kreogist Dev Team\\ \\ \\
+    \noindent \textbf{Kreogist Mail \\
+    Development Documentation \\
+    Software Quality Assurance Plans}\\ \\ \\
+    \today
+    }
+    \vfill
+    \hfill KMKOT04
+    \restoregeometry
+    \clearpage
+    \section*{Revision History}
+    \addcontentsline{toc}{section}{Revision History}
+    \begin{center}
+        \begin{longtable}{|l|l|l|l|}
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Revision}} & \multicolumn{1}{c|}{\textbf{Version}} & \multicolumn{1}{c|}{\textbf{Description}} & \multicolumn{1}{c|}{\textbf{Date}}\\
+            \hline
+            \endfirsthead
+
+            \multicolumn{3}{r}%
+            \textbf{Continued} \\
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Revision}} & \multicolumn{1}{c|}{\textbf{Version}} & \multicolumn{1}{c|}{\textbf{Description}} & \multicolumn{1}{c|}{\textbf{Date}}\\
+            \hline
+            \endhead
+
+            \endfoot
+
+            \hline
+            \endlastfoot
+
+            \hline
+            KMKOT04 & -001 & Initial commit & Jan. 21th, 2016\\
+            \hline
+            KMKOT04 & -002 & Internally accepted & Jan. 23th, 2016\\
+            \hline
+            KMKOT04 & -003 & Revision for correcting grammar & Jan. 25th, 2016\\
+            \hline
+            KMKOT04 & -004 & Correct grammar error by input mistakes & Feb. 19th, 2016
+        \end{longtable}
+    \end{center}
+    \clearpage
+    \section*{Preface}
+    \addcontentsline{toc}{section}{Preface}
+    \paragraph{} This document is an update to the specifications contained in the "Affected Documents" table below. This document is a part of product (project) Kreogist Mail.
+    \paragraph{} This document may also contain information that was not previously published.\\
+    {
+    \noindent \intitlesize \\ Affected Documents \\
+    }
+    \begin{center}
+        \begin{longtable}{|p{10cm}|c|}
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Document Title}} & \multicolumn{1}{c|}{\textbf{Document Number}} \\
+            \hline
+            \endfirsthead
+
+            \multicolumn{2}{r}%
+            \textbf{Continued} \\
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Document Title}} & \multicolumn{1}{c|}{\textbf{Document Number}} \\
+            \hline
+            \endhead
+
+            \endfoot
+
+            \hline
+            \endlastfoot
+
+            Kreogist Mail Software Verification and Validation Plan & KMKOT05 \\
+        \end{longtable}
+    \end{center}
+    {
+    \noindent \intitlesize \\ Related Documents\\
+    }
+    \begin{center}
+        \begin{longtable}{|p{10cm}|c|}
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Document Title}} & \multicolumn{1}{c|}{\textbf{Document Number}} \\
+            \hline
+            \endfirsthead
+
+            \multicolumn{2}{r}%
+            \textbf{Continued} \\
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Document Title}} & \multicolumn{1}{c|}{\textbf{Document Number}} \\
+            \hline
+            \endhead
+
+            \endfoot
+
+            \hline
+            \endlastfoot
+
+            Kreogist Mail Software Requirement Specification & KMKOT01 \\
+            \hline
+            Kreogist Mail Software Project Management Plans & KMKOT02 \\
+            \hline
+            Kreogist Mail Software Design Specification & KMKOT03 \\
+        \end{longtable}
+    \end{center}
+    \clearpage
+    \addcontentsline{toc}{section}{Table of Contents}
+    \tableofcontents
+    \clearpage
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+    \section{Introduction}
+        \paragraph{} This document describes procedures and control methods to obtain desired quality level of end products and process by which these end products are created. This document serves as a guide for managers and developers of Kreogist Mail project (the project). All team members must read this document and apply procedures stated in it. Document applies to all phases of software development as defined in Software Project Management Plan. Detailed information about the software quality assurance activities for these phases will be added in appendices during the project.
+        \paragraph{} All activities directly related to purpose are considered to be in scope. All activities not directly related to purposes are considered to be out of scope. For example, network availability is not within the scope of this project.
+    \section{Reference documents}
+        \begin{enumerate}[\texttt{[}1\texttt{]}.]
+            \item Kreogist Dev Team. "Kreogist Mail Software Requirements Specification", January, 2016.\label{ref:srs}
+            \item Kreogist Dev Team. "Kreogist Mail Software Project Management Plans", January, 2016.
+            \item Free Software Foundation, "GNU Free Documentation License", See \url{http://www.gnu.org/licenses/fdl.html} (last checked January 13th, 2016), November 3, 2008.\label{ref:fdlv3}
+            \item Wikipedia, "Qt (software) - Wikipedia, the free encyclopedia", See \url(https://en.wikipedia.org/wiki/Qt_%28software%29) (last checked January 16th, 2016), January 4, 2016.\label{ref:qt}
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 1063-2001, IEEE Standard for Software User Documentation", December 20, 2001.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications", October 20, 1998.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 1016-1998, IEEE Standard for Information Technology--Systems Design--Software Design Descriptions", July 20, 2009.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 1058-1998, IEEE Standard for Software Project Management Plans", December 22, 1998.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 1074-1997, IEEE Standard for Developing Software Life Cycle Processes", 1997.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 1012-1998, IEEE Standard for Software Verification and Validation", 1998.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 828-2005, IEEE Standard for Software Configuration Management Plans", August 12, 2005.
+         \end{enumerate}
+    \section{Management}
+        \paragraph{} This chapter details the structure and tasks of Software Quality Assurance team.
+        \subsection{Organization}
+            \paragraph{} For the organization within the project and responsibilities of individual members of teams see Software Project Management Plan. Quality Assurance Manager leads Software Quality Assurance team. He is assisted by team leader. Furthermore Quality Assurance Manager is responsible for Software Quality Assurance and performance of Software Quality Assurance team. When software quality is endangered Quality Assurance Manager will contact team leader. They will also decide whether or not one or more of the following parties have to be informed: customers and project manager.
+        \subsection{Tasks}\label{section:tasks}
+            \paragraph{} Main task of Software Quality Assurance team is to check whether procedures are followed properly and that standards are handled correctly as defined in Software Quality Assurance and Software Verification and Validation Plans. Additionally Software Quality Assurance team inspects whether all group members fulfill their tasks as defined in Software Project Management Plan according to the parts of Software Quality Assurance applying to their specific tasks. If a problem is detected, appropriate procedure as defined in section \ref{scetion:problem_report}, i.e. \emph{Problem reporting and corrective action} will be followed. Besides described main task, Software Quality Assurance team has the following additional tasks:
+            \begin{enumerate}
+                \item Software Quality Assurance team has to check the consistency and coherence between documents.
+                \item Organize internal reviews.
+                \item Attend internal reviews.
+                \item Check whether all group members take their responsibilities as defined in Software Project Management Plan by talking to team members.
+            \end{enumerate}
+            \paragraph{} Specific tasks arising during different phases of the project will be added in the corresponding appendices.
+        \subsection{Responsibilities}
+            \paragraph{} Main responsibility for Software Quality Assurance tasks, as described in section \ref{section:tasks}, i.e. \emph{Tasks}, lies with Quality Assurance Manager. Quality Assurance Manager can delegate the tasks within Software Quality Assurance team. Minor problems can be solved by each member of Software Quality Assurance team, whereas major problems are matter of Quality Assurance Manager and are also reported to team leader. Every problem found by a team member has to be reported to Quality Assurance Manager (section \ref{scetion:problem_report}, i.e. \emph{Problem reporting and corrective action}). Reporting to project members outside Software Quality Assurance team is done by Quality Assurance Manager. In case Quality Assurance Manager will be unavailable for a short period of time, team leader will assume his tasks. If Quality Assurance Manager will be unavailable for a longer period of time, Software Quality Assurance team must be expanded and the tasks reorganized. Project Manager will be responsible for this.
+    \section{Documentation}
+        \paragraph{} The documents to be delivered in specific phases of the project are listed and outlined in section \emph{Project Deliverables} of Software Project Management Plan. Document standards are described in section \ref{section:standards}, i.e. \emph{Standards, practices, conventions, and metrics}.
+        \paragraph{} Software Quality Assurance team must see to it that the following documents are properly reviewed internally before they are submitted for an external review.
+        \subsection*{Software Requirement Specification}
+            \paragraph{} Software Quality Assurance team checks before the internal review whether the SRS:
+            \begin{enumerate}
+                \item Contains a general description of the software that has to be developed.
+                \item Contains requirements on the software to be developed as stated by the customer.
+                \item Contains constraints on the software to be developed.
+                \item Contains a priority list of the requirements.
+            \end{enumerate}
+            \paragraph{} Furthermore it has to be checked that every user requirement complies with the requirements defined in Software Verification and Validation Plans.
+        \subsection*{Software Project Management Plans}
+            \paragraph{} Software Quality Assurance team must check whether the goals of the project are clearly described. A life cycle approach for the project must be defined. Software Quality Assurance team must ensure that Software Project Management Plans is realistic by checking:
+            \begin{enumerate}
+                \item The assumptions made during the planning of the project (by comparing the actual time spent with the reserved time in the planning).
+                \item Restrictions with respect to planning (e.g. availability of members).
+                \item External problems (e.g. room availability).
+            \end{enumerate}
+        \subsection*{Software Quality Assurance Plans}
+            \paragraph{} With respect to Software Quality Assurance Plans, Software Quality Assurance team checks before the internal review whether the Software Quality Assurance Plans contains:
+            \begin{enumerate}
+                \item Project standards.
+                \item Problem reporting procedures.
+                \item Responsibilities of the project members with respect to quality assurance.
+            \end{enumerate}
+        \subsection*{Software Verification and Validation Plans}
+            \paragraph{} With respect to Software Verification and Validation Plans, Software Quality Assurance team checks before the internal review whether the Software Verification and Validation Plans contains:
+            \begin{enumerate}
+                \item Reviewing and audits.
+                \item Testing.
+                \item Tracing.
+            \end{enumerate}
+            \paragraph{} During internal reviews Software Verification and Validation Plans, Software Quality Assurance team checks these documents and in case of problems, author(s) and team leader are informed. After the corrective action has been taken, Software Quality Assurance team reviews the document again.
+    \section{Standards, practices, conventions, and metrics}\label{section:standards}
+        \subsection{Documentation standards}
+            \paragraph{} During this project many different documents will be made. Software Quality Assurance team checks that documents adhere to house style. Software Quality Assurance team checks that documents adhere to house style and documents are made following IEEE standard guidelines, this is done during random checks (section \ref{section:review}, i.e. \emph{Review}) held by Software Quality Assurance team. Every document has to be approved by:
+            \begin{itemize}
+                \item Author(s)
+                \item Team leader
+                \item Quality Assurance Manager
+            \end{itemize}
+            \paragraph{} In case that these three people happen to be one and the same, a second member of responsible team has to give his approval as well. Only approved documents affect the project. Documentation standards involve the following:
+            \begin{enumerate}
+                \item All documents must adhere to IEEE standard;
+                \item All documents use the template provided by Kreogist Dev Team.
+                \item Requirements on review and approval as described in section \ref{section:review}, i.e. \emph{Review}.
+                \item Procedures involving change of documents.
+            \end{enumerate}
+            \paragraph{} These standards apply to all documents, to electronic versions as well as printed ones. However the layout requirements do not apply to documents other than the project and product documents. All documents are made available through Document repository. In case of unavailability of document repository, Project Manager sees to it that there are three copies available of every document (latest version with the highest status of approval) in groups workspace. Three copies consist of one copy on paper and two digital copies on two different geographical locations.
+        \subsection{Design standards}
+            \paragraph{} Design standards in Architectural Design and Detailed Design phase will be defined or referenced in Architectural Design Document respectively Detailed Design Document. Software design paradigm that will be used for Mail is Object Oriented Programming.
+        \subsection{Coding standards}\label{section:coding_standards}
+            \paragraph{} This section show you the formatting rules of editing codes from Kreogist Dev Team.
+            \paragraph{} Some existing code may not follow these conventions, but they must be used for new code. If changing existing code to follow these conventions, it is best to send changes to follow the conventions separately from any other changes to the code.
+            \subsubsection*{Indentation}
+                \begin{itemize}
+                    \item \textbf{4 spaces} are used for indentation.
+                    \item Using \textbf{spaces} instead of using tabs.
+                \end{itemize}
+            \subsubsection*{Declaring variables}
+                \begin{itemize}
+                    \item {Suggest declaring each variable on a separate line.
+                            \begin{lstlisting}
+    //Wrong
+    int a=0,b=0,c=0;
+
+    //Correct
+    int a=0;
+    int b=0;
+    int c=0;
+                            \end{lstlisting}
+                    }
+                    \item {Avoid meaningless names (e.g. ¡°a¡±, ¡°rbarr¡±, ¡°nughdeget¡±) and abbreviations(e.g. "asap").
+                            \begin{lstlisting}
+    //Correct
+    int m_timeoutCounter;
+                            \end{lstlisting}}
+                    \item {Single character variable names are only okay for counters and temporaries, where the purpose of the variable is obvious.
+                            \begin{lstlisting}
+    //Correct
+    for(int i=0; i<m_timeoutCounter; ++i);
+                            \end{lstlisting}}
+                    \item {Wait when declaring a variable until it is needed.}
+                    \item {Variables and functions start with a lower-case letter. Each consecutive word in a variable¡¯s name starts with an upper-case letter.
+                            \begin{lstlisting}
+    //Correct
+    int m_isPressed; //for member variables.
+    int isPressed;   //for local variables.
+                            \end{lstlisting}}
+                    \item {Classes always start with two upper-case letters. Public classes start with a ¡®K¡¯ (KNGlobal) followed by an upper case letter. Public functions most often start with a ¡®k¡¯ (kSort).
+                            \begin{lstlisting}
+    //Correct
+    class KNGlobal : public QOjbect
+    {
+    }
+                            \end{lstlisting}}
+                    \item Acronyms are camel-cased (e.g. QXmlStreamReader, not QXMLStreamReader).
+                \end{itemize}
+            \subsubsection*{Whitespace}
+                \begin{itemize}
+                    \item Use blank lines to group statements together where suited.
+                    \item Always use only one blank line.
+                    \item {For pointers or references, always use a single space between the type and ¡®*¡¯ or ¡®\&¡¯, but no space between the ¡®*¡¯ or ¡®\&¡¯ and the variable name.
+                            \begin{lstlisting}
+    //Wrong
+    KNGlobal* m_global;
+
+    //Correct
+    KNGlobal *m_global;
+
+    //Wrong
+    void removeContent(QByteArray& data);
+
+    //Correct
+    void removeContent(QByteArray &data);
+                            \end{lstlisting}}
+                    \item No space after a cast.
+                    \item {Avoid C-style casts when possible.
+                            \begin{lstlisting}
+    // Wrong
+    char* blockOfMemory = (char* ) malloc(data.size());
+
+    // Correct
+    char *blockOfMemory =
+            reinterpret_cast<char *>(malloc(data.size()));
+                            \end{lstlisting}}
+                    \item Do not put multiple statements on one line. By extension, use a new line for the body of a control flow statement.
+                \end{itemize}
+            \subsubsection*{Parentheses}
+                \begin{itemize}
+                    \item {Use parentheses to group expressions:
+                            \begin{lstlisting}
+    // Wrong
+    if (a && b || c)
+
+    // Correct
+    if ((a && b) || c)
+
+    // Wrong
+    a + b & c
+
+    // Correct
+    (a + b) & c
+                            \end{lstlisting}}
+                \end{itemize}
+            \subsubsection*{Switch statements}
+                \begin{itemize}
+                    \item The case labels are in the same column as the switch.
+                    \item {Every case must have a break (or return) statement at the end or a comment to indicate that there¡¯s intentionally no break, unless another case follows immediately.
+                            \begin{lstlisting}
+    // Correct
+    switch (myEnum)
+    {
+    case Value1:
+        doSomething();
+        break;
+    case Value2:
+    case Value3:
+        doSomethingElse();
+        // fall through
+    default:
+        defaultHandling();
+        break;
+    }
+                            \end{lstlisting}}
+                \end{itemize}
+            \subsubsection*{Jump statements (break, continue, return, and goto)}
+                \begin{itemize}
+                    \item {Do not put ¡®else¡¯ after jump statements:
+                            \begin{lstlisting}
+    // Wrong
+    if (thisOrThat)
+        return;
+    else
+        somethingElse();
+
+    // Correct
+    if (thisOrThat)
+        return;
+    somethingElse();
+                            \end{lstlisting}}
+                \end{itemize}
+            \subsubsection*{Line breaks}
+                \begin{itemize}
+                    \item Keep lines shorter than 100 characters; wrap if necessary.
+                    \item {Operators go at the end of wrapped lines.
+                            \begin{lstlisting}
+    if (longExpression +
+        otherLongExpression +
+        otherOtherLongExpression)
+    {
+    }
+                            \end{lstlisting}}
+                \end{itemize}
+        \subsection{Comment standards}
+            \paragraph{} Comment standards form a part of Coding standards and will thus be described in section \ref{section:coding_standards}, i.e. \emph{Coding standards}.
+        \subsection{Testing standards}
+            \paragraph{} Testing standards to be used are described in Software Verification and Validation Plans.
+        \subsection{Metrics}
+            \paragraph{} Members of Software Quality Assurance team will measure the quality of delivered software, during random checks, by means of metrics. Some examples of metrics are:
+                \begin{itemize}
+                    \item Length of function (should not be more than 100 lines).
+                    \item Total length of (useful) commentary divided by the total length of code (should exceed 1/5).
+                    \item Number of parameters divided by number of functions (should not exceed 5. Functions should have no more than 7 parameters).
+                    \item Maximum depth of nested if-statements (should be less than 4).
+                    \item Maximum depth of loops (should be less than 3).
+                \end{itemize}
+            \paragraph{} Software Quality Assurance team makes a small report containing results of described tests in its log and delivers report to author(s) of checked document. If a violation of these metrics is detected, it has to be resolved, unless team leader and Quality Assurance Manager grant a permit.
+        \subsection{Compliance monitoring}
+            \paragraph{} Software Quality Assurance team will monitor compliance to proposed conventions by way of random checking of codes during which references to other documents are checked. During reviews Software Quality Assurance team member present checks with authors of reviewed codes whether it has references in it. He will also check whether authors checked the referenced codes. Discovered problems are reported to team leader.
+    \section{Review}\label{section:review}
+        \paragraph{} Standards and procedures for Reviews and Audits are described in Software Verification and Validation Plans. In addition to Reviews, Software Quality Assurance team carries out checks as described below.
+        \subsection*{Persistent checks}
+        \paragraph{} All the codes will be checked as soon as it complete. Each function won't be commit before it has been checked completely.
+        \subsection*{Random checks}
+        \paragraph{} Software Quality Assurance team randomly checks all project and product documents to ensure that all products adhere to document standards and that all group members do their job properly. Management and product documents are tested for adherence to IEEE standards and if their layout and style adheres to house style. Furthermore the references and tracing to other documents are investigated. It is observed that program code adheres to the coding standards. Random checks are an addition to reviews. Every document undergoes a random check at least once. To save time, Software Quality Assurance team does not have to write a report. It just reports results to author and team leader. If problems are discovered a date is set when problem must be solved and then document is checked again.
+    \section{Test}
+        \paragraph{} Methods and functions for testing are detailed in Software Verification and Validation Plans. In random tests of section \ref{section:review}, i.e. \emph{Review} and in weekly interviews of team leaders, Software Quality Assurance team observes that these functions are followed and that team had their functions tested undertakes possible necessary actions. When it is detected that testing procedures are not followed, Software Quality Assurance team informs team leader.
+    \section{Problem reporting and corrective action}\label{scetion:problem_report}
+        \paragraph{} When a problem is detected, it has to be solved. There are several kinds of problems:
+        \paragraph{Document problems}
+            \begin{itemize}
+                \item Non compliance with other project documents.
+                \item Non compliance with IEEE standards.
+                \item Non compliance with house style.
+                \item Incompleteness.
+                \item Errors.
+            \end{itemize}
+        \paragraph{Code problems}
+            \begin{itemize}
+                \item Lack of functionality.
+                \item Wrong functionality.
+                \item Non compliance with coding or commentary standards.
+            \end{itemize}
+        \paragraph{} These are procedures to be followed when a problem is detected:
+        \paragraph{Problem reporting procedure} When a problem is detected, person who discovered the error is responsible for reporting it to team leader and Quality Assurance Manager. When a problem is discovered during a review, a member of Software Quality Assurance team present is responsible.
+        \paragraph{Problem solving procedure}
+            \begin{itemize}
+                \item Software Quality Assurance team appoints team leader to solve the reported error. Team leader will allocate the problem to one of team members. He is then responsible for solving the problem.
+                \item When the problem is solved Software Quality Assurance team is notified to check whether changes could solve the problem.
+                \item When the problem cannot be solved, or cannot be solved within a reasonable amount of time a meeting is set up with team leader, and Quality Assurance Manager. During this meeting a decision will be made about further dealing with the problem.
+            \end{itemize}
+        \paragraph{} If the problem to be solved was discovered after internal or external acceptance, team leader first decides whether the problem is important enough to solve, if so, a Change Request (CR) has to be filled out. CR will be treated as a problem. This CR has to be approved by:
+            \begin{itemize}
+                \item In case of previous internal acceptance: team leader, author(s) of the document and Quality Assurance Manager.
+                \item In case of previous external acceptance: team leader, author(s) of the document, Quality Assurance Manager, and Project Manager.
+            \end{itemize}
+        \paragraph{Change in requirements of the customer}
+        \paragraph{} It is also possible that requirements of customer change. In this case, requested change is matched to SRS. If the change conforms to SRS, it is accepted. If it does not conform to SRS, the team decides wether it will discard the changes or not.
+    \section{Tools, techniques, and methodologies}
+        \paragraph{} Software Quality Assurance team has to make sure that appropriate tools, techniques and methods are used. These are described in Software Project Management Plan and Software Verification and Validation Plans. Software Quality Assurance team checks their use by means of random checks.
+        \paragraph{} With respect to tool used during this project, special interest is paid to:
+        \begin{itemize}
+            \item Availability of tools.
+            \item Knowledge. Group members working with the tools must have necessary skills to work with the tools.
+            \item Tools must work properly.
+        \end{itemize}
+        \paragraph{} Every used tool will be checked at least once before use and once during use. When problems appear, Software Quality Assurance decides together with team leader if the problem can be solved, or if the tool must be replaced by an alternative.
+    \section{Code control}
+        \paragraph{} It is team leader's responsibility to assure correct handling of the code due to the standards described in Software Project Management Plan.
+        \paragraph{} The following has to be valid:
+        \begin{enumerate}
+            \item Documents are available to all people who are authorized to access them and to no one else.
+            \item Latest version of a document is always available.
+            \item No file is unnecessarily locked.
+            \item Name conventions are consequentially used.
+        \end{enumerate}
+        \paragraph{} Software Quality Assurance team checks if procedures and standards as described in Software Quality Assurance are handled properly. This is done by reviews and checks defined in section \ref{section:review}, i.e. \emph{Review}. Problems are reported to team leader and project manager.
+    \section{Media control}
+        \paragraph{} Software Quality Assurance team checks if procedures and standards as described in Software Quality Assurance are handled properly. This is done in reviews and checks defined in section \ref{section:review}, i.e. \emph{Review}. Problems are reported to team leader and project manager.
+    \section{Supplier control}
+        \paragraph{} All external software components in codes, that have an unreliable source, will be tested according to IEEE standards. Software components that have reliable sources will undergo some quick tests. These tests will be focused on the parts of this software that are of importance to the project. Whether an external software component is reliable or not is to be decided by programmer that wants to use the specific component and the team leader who is from the team that wants to use the component.
+        \paragraph{} Software tools which will be used for development of the source code are available to all project members.
+    \section{Records collection, maintenance and retention}
+        \paragraph{} Minutes of meetings and notes of external reviews are added to the project library as described in Software Project Management Plan. Minutes of meetings are added after members of meeting have approved them. Minutes are delivered 3 workdays after the meeting at the latest. These documents will be kept throughout the duration of this project. Notes of reviews are reworked into a new version of the document.
+    \section{Training}
+        \paragraph{} During the project there will arise tasks that require special skills. Due to the fact that all group members reached an acceptable level of knowledge in the area of computer science, special training in this area will probably be unnecessary. However, each member of the project should make sure he has sufficient skill in of the following:
+        \begin{enumerate}
+            \item Developing languages: C++.
+            \item Version control tools: git.
+            \item Framework: Qt.
+        \end{enumerate}
+        \paragraph{} If tasks arise that require special skills, team leader and project manager will assess the level of knowledge for the task in group and then they decide if special actions have to be taken. In that case, detailed information will be added in the appendices of this document.
+    \section{Risk management}
+        \paragraph{} In Software Project Management Plan, risks of the project are described. During progress meetings the occurrence of any of risks described must be discussed and project manager must see to it that the necessary course of action is taken. Quality Assurance Manager will assist him in this task.
+\end{document}

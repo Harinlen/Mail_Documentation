@@ -1,0 +1,453 @@
+\documentclass[11pt,a4paper]{article}
+
+%Text Color
+\usepackage{color}
+
+%Paragraph Spacing
+\usepackage{setspace}
+
+%Graphics
+\usepackage{graphicx}
+
+%Page Margins
+\usepackage{geometry}
+
+%Basic Staff
+\usepackage{enumerate}
+\usepackage{amsmath}
+
+%Long Table
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{longtable}
+
+%Codes
+\usepackage{listings}
+\lstset{%Coding Style
+    language=C++
+}
+
+%URL link
+\usepackage{url}
+
+%Appendix
+\usepackage[toc,page,title,titletoc,header]{appendix}
+
+%Font sizes
+\newcommand{\titlesize}{\fontsize{70pt}{\baselineskip}\selectfont}
+\newcommand{\noticesize}{\fontsize{10pt}{\baselineskip}\selectfont}
+\newcommand{\intitlesize}{\fontsize{17pt}{\baselineskip}\selectfont}
+\newcommand{\licensetitle}{\fontsize{12pt}{\baselineskip}\selectfont}
+\begin{document}
+    \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+    \begin{titlepage}
+        \newgeometry{left=2.7cm,right=2.4cm,top=3.3cm,bottom=2.5cm}
+        \begin{figure}[h!]
+            \hfill\includegraphics{Kreogist.png}
+        \end{figure}
+        \begin{spacing}{2.0}
+            \textcolor[rgb]{0.49,0.52,0.55}{\titlesize \\ \textbf{Kreogist Mail\\ Development Documentation\\}}
+            \textcolor[rgb]{0.49,0.52,0.55}{\textbf{Software Verification and Validation Plans}\\}
+            \textcolor[rgb]{0.49,0.52,0.55}{\textbf{\today}\\}
+        \end{spacing}
+        \vfill
+        \textcolor[rgb]{0.49,0.52,0.55}{
+            \begin{flushright}
+                Reference Number: KMKOT05.\\
+                This document is capable with IEEE Std 1012-2004.
+            \end{flushright}
+        }
+        \restoregeometry
+    \end{titlepage}
+    \pagenumbering{Roman}
+    \thispagestyle{empty}
+    \newgeometry{left=2.7cm,right=2.4cm,top=3.3cm,bottom=2.5cm}
+    \begin{figure}[h!]
+        \includegraphics[width=2.5cm]{Kreogist.png}
+    \end{figure}
+    \vspace{4.5cm}
+    {
+    \noticesize
+    \begin{spacing}{0.5}
+        \noindent All information provided here is subject to change without notice. Contact Kreogist Dev Team to obtain the latest Kreogist product specifications and roadmaps.\\ \\
+        \noindent Kreogist Mail may require enabled hardware, specific software, or services activation. Check with your system manufacturer or retailer.\\ \\
+        \noindent No computer system can be absolutely secure. Kreogist does not assume any liability for lost or stolen data or systems or any damages resulting from such losses.\\ \\
+        \noindent The products described may contain design defects or errors which may cause the product to deviate from published specifications. Current characterized errata are available on request.\\ \\
+        \noindent All the other documents mentioned in this document could be found at the official site of Kreogist Dev Team. Contact Kreogist Dev Team if there's any trouble.\\ \\
+        \noindent Intel, Intel Core and the Intel logo are trademarks of Intel Corporation in the U. S. and/or other countries.\\ \\
+        \noindent Linux is a trademark of Linus Torvalds in the U. S., other countries, or both.\\ \\
+        \noindent Microsoft and Microsoft Windows are trademarks of Microsoft Corporation in the U. S. and/or other countries.\\ \\
+        \noindent Macintosh is a trademark of Apple Inc. in the U. S., other countries, or both.\\ \\
+        \noindent UNIX is a registered trademark of The Open Group in the U. S. and other countries.\\ \\
+        \noindent *Other names and brands may be claimed as the property of others.\\ \\
+    \end{spacing}
+    \vfill
+    \noindent \textbf{First Edition (Jan 2016)}\\ \\
+    \noindent This edition applies to Version 0.1 of Kreogist Mail. \\ \\
+    \noindent \textbf{Copyright {\copyright} 2016, Kreogist Dev Team. All rights reserved.}\\
+    \noindent Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.\\
+    \noindent A copy of the license is included in the section entitled "GNU Free Documentation License".
+    \noindent Note to government users restricted rights.
+    }
+    \clearpage
+    \thispagestyle{empty}
+    {
+    \intitlesize
+    \noindent Kreogist Dev Team\\ \\ \\
+    \noindent \textbf{Kreogist Mail \\
+    Development Documentation \\
+    Software Verification and Validation Plans}\\ \\ \\
+    \today
+    }
+    \vfill
+    \hfill KMKOT05
+    \restoregeometry
+    \clearpage
+    \section*{Revision History}
+    \addcontentsline{toc}{section}{Revision History}
+    \begin{center}
+        \begin{longtable}{|l|l|l|l|}
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Revision}} & \multicolumn{1}{c|}{\textbf{Version}} & \multicolumn{1}{c|}{\textbf{Description}} & \multicolumn{1}{c|}{\textbf{Date}}\\
+            \hline
+            \endfirsthead
+
+            \multicolumn{3}{r}%
+            \textbf{Continued} \\
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Revision}} & \multicolumn{1}{c|}{\textbf{Version}} & \multicolumn{1}{c|}{\textbf{Description}} & \multicolumn{1}{c|}{\textbf{Date}}\\
+            \hline
+            \endhead
+
+            \endfoot
+
+            \hline
+            \endlastfoot
+
+            \hline
+            KMKOT05 & -001 & Initial commit & Jan. 23th, 2016
+        \end{longtable}
+    \end{center}
+    \clearpage
+    \section*{Preface}
+    \addcontentsline{toc}{section}{Preface}
+    \paragraph{} This document is an update to the specifications contained in the "Affected Documents" table below. This document is a part of product (project) Kreogist Mail.
+    \paragraph{} This document may also contain information that was not previously published.\\
+    {
+    \noindent \intitlesize \\ Affected Documents \\
+    }
+    \begin{center}
+        \begin{longtable}{|p{10cm}|c|}
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Document Title}} & \multicolumn{1}{c|}{\textbf{Document Number}} \\
+            \hline
+            \endfirsthead
+
+            \multicolumn{2}{r}%
+            \textbf{Continued} \\
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Document Title}} & \multicolumn{1}{c|}{\textbf{Document Number}} \\
+            \hline
+            \endhead
+
+            \endfoot
+
+            \hline
+            \endlastfoot
+
+            Kreogist Mail Software Project Management Plans & KMKOT02 \\
+            \hline
+            Kreogist Mail Software Quality Assurance Plans & KMKOT04 \\
+
+        \end{longtable}
+    \end{center}
+    {
+    \noindent \intitlesize \\ Related Documents\\
+    }
+    \begin{center}
+        \begin{longtable}{|p{10cm}|c|}
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Document Title}} & \multicolumn{1}{c|}{\textbf{Document Number}} \\
+            \hline
+            \endfirsthead
+
+            \multicolumn{2}{r}%
+            \textbf{Continued} \\
+            \hline
+            \multicolumn{1}{|c|}{\textbf{Document Title}} & \multicolumn{1}{c|}{\textbf{Document Number}} \\
+            \hline
+            \endhead
+
+            \endfoot
+
+            \hline
+            \endlastfoot
+
+            Kreogist Mail Software Requirement Specification & KMKOT01 \\
+            \hline
+            Kreogist Mail Software Design Specification & KMKOT03 \\
+        \end{longtable}
+    \end{center}
+    \clearpage
+    \addcontentsline{toc}{section}{Table of Contents}
+    \tableofcontents
+    \clearpage
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+    \section{Introduction}
+        \subsection{Purpose}
+            \paragraph{} This Software Verification and Validation Plans (SVVP) specifies the tasks to be performed for Kreogist Mail software project (The project). This SVVP is written in accordance with IEEE Std 1012-1998.
+        \subsection{Scope}
+            \paragraph{} The scope of this SVVP is to verify and validate all Kreogist Mail software (Mail) and to validate all packaged and embedded software components for conformance to requirements for safety factors, response time, expandability, and external interfaces. Until a customer is under contract, the acceptance testing activities will not be included.
+        \subsection{Objectives}
+            \paragraph{} The objectives of this SVVP are to verify and validate all developed software and interfaces for conformance with Mail requirements for response time, expandability, and safety factors.
+        \subsection{Applicability}
+            \paragraph{} This SVVP applies to the products of the requirements, design, implementation, and test phases of Mail development cycle.
+        \subsection{Waivers}
+            \paragraph{} This SVVP deviates from IEEE Std 1012-1993 in that it will not be applied to the following phases:
+            \begin{itemize}
+                \item Concept phase
+                \item Installation and checkout phase
+                \item Operation and maintenance phase
+            \end{itemize}
+            This SVVP has been developed during the concept phase and applies to subsequent phases. The V\&V planning for the installation and checkout phase, and the operation and maintenance phase will be deferred until a customer installation has been identified for the project.
+    \clearpage
+    \section{Referenced Documents}\label{section:reference}
+        \paragraph{} This section will identify the binding compliance documents, documents referenced by this Plan, and any supporting documents required to supplement or implement this Plan.
+        \begin{enumerate}[\texttt{[}1\texttt{]}.]
+            \item Kreogist Dev Team. "Kreogist Mail Software Requirements Specification", January, 2016.\label{ref:srs}
+            \item Kreogist Dev Team. "Kreogist Mail Software Project Management Plans", January, 2016.\label{ref:spmp}
+            \item Kreogist Dev Team. "Kreogist Mail Software Quality Assurance Plans", January, 2016.\label{ref:sqap}
+            \item Free Software Foundation, "GNU Free Documentation License", See \url{http://www.gnu.org/licenses/fdl.html} (last checked January 13th, 2016), November 3, 2008.\label{ref:fdlv3}
+            \item Wikipedia, "Qt (software) - Wikipedia, the free encyclopedia", See \url(https://en.wikipedia.org/wiki/Qt_%28software%29) (last checked January 16th, 2016), January 4, 2016.\label{ref:qt}
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 1059-1993, IEEE Guide for Software Verification and Validation Plans", December 2, 1993.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 1063-2001, IEEE Standard for Software User Documentation", December 20, 2001.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications", October 20, 1998.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 1016-1998, IEEE Standard for Information Technology--Systems Design--Software Design Descriptions", July 20, 2009.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 1058-1998, IEEE Standard for Software Project Management Plans", December 22, 1998.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 1074-1997, IEEE Standard for Developing Software Life Cycle Processes", 1997.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 1012-1998, IEEE Standard for Software Verification and Validation", 1998.
+            \item IEEE Software Engineering Standards Committee. "IEEE Std 828-2005, IEEE Standard for Software Configuration Management Plans", August 12, 2005.
+         \end{enumerate}
+    \section{Definitions}
+    \paragraph{} This section will define or provide a reference to the definitions of all terms required to properly interpret the Plan. This section shall describe the acronyms and notations used in the Plan.
+    \begin{center}
+        \begin{longtable}{|p{3cm}|p{9.1cm}|}
+            \caption[Definitions]{Definitions, Acronyms \& Abbreviations} \label{grid:abbv} \\
+            \hline
+            \multicolumn{1}{|c|}{Acronyms} & \multicolumn{1}{c|}{Definition}\\
+            \hline
+            \endfirsthead
+
+            \multicolumn{2}{r}%
+            {\textbf{Continued}} \\
+            \hline
+            \multicolumn{1}{|c|}{Acronyms} & \multicolumn{1}{c|}{Definition} \\
+            \hline
+            \endhead
+
+            \endfoot
+
+            \hline
+            \endlastfoot
+            AD          & Architectural Design  \\
+            \hline
+            ADD         & Architectural Design Document  \\
+            \hline
+            ATP         & Acceptance Test Plan  \\
+            \hline
+            baseline    & a work product that has been formally reviewed and accepted by the involved parties  \\
+            \hline
+            Client      & Monitor, Agent or Submitter  \\
+            \hline
+            CM          & Configuration Management  \\
+            \hline
+            FFP         & Firm-Fixed-Price; a price for fulfilling the contract that will not be under- or over-run \\
+            \hline
+            IEEE        & Institute of Electrical and Electronics Engineers  \\
+            \hline
+            milestone   & a scheduled event used to measure progress  \\
+            \hline
+            MG          & Merge Phase \\
+            \hline
+            QAM         & Quality Assurance Manager  \\
+            \hline
+            RA          & Reanalysis Phase \\
+            \hline
+            SC          & Sprint Check Phase \\
+            \hline
+            SCMP        & Software Configuration Management Plan  \\
+            \hline
+            SDS         & Software Design Specification  \\
+            \hline
+            SM          & Senior Management  \\
+            \hline
+            SPMP        & Software Project Management Plan (this document)  \\
+            \hline
+            SQA         & Software Quality Assurance  \\
+            \hline
+            SQAP        & Software Quality Assurance Plan  \\
+            \hline
+            SR          & Software Requirements  \\
+            \hline
+            SRD         & Software Requirements Document  \\
+            \hline
+            SRS         & Software Requirements Specification  \\
+            \hline
+            STD         & Software Transfer Document  \\
+            \hline
+            STP         & Software Testing Plan \\
+            \hline
+            SUM         & Software User Manual  \\
+            \hline
+            SVVP        & Software Verification and Validation Plan \\
+            \hline
+            TR          & Transfer Phase  \\
+            \hline
+            UTP         & Unit Test Plan  \\
+            \hline
+            VPM         & Vice Project Manager  \\
+            \hline
+            VQAM        & Vice Quality Assurance Manager
+        \end{longtable}
+    \end{center}
+    \section{V\&V overview}
+        \paragraph{} This section will describe the organization, schedule, resources, responsibilities, tools, techniques, and methodologies necessary to perform the software verification and validation.
+        \subsection{Organization}
+            \paragraph{} For the organization within the project and responsibilities of individual members of teams see \emph{Kreogist Mail Software Project Management Plan}$^{[\ref{ref:spmp}]}$ (SPMP). Team leader leads the V\&V team. Furthermore team leader is responsible for the project and performance of V\&V team. When the project is finish, V\&V team has to verify and validate the whole part of the software.
+        \subsection{Master schedule}\label{section:tasks}
+            \paragraph{} Main task of V\&V team is to check whether procedures are followed properly and that standards are handled correctly as defined in this document. Additionally V\&V team will check whether the software is enabled to be released. Besides described main task, V\&V team has to following additional tasks:
+            \begin{enumerate}
+                \item Organize V\&V meeting.
+                \item Attend V\&V reviews.
+                \item Notify Kreogist Dev Team to release the software when Mail is recognized as accept.
+                \item Notify team leader and Quality Assurance Manager to check the product when Mail is recognized as failed.
+            \end{enumerate}
+        \subsection{Software integrity level scheme}
+            \paragraph{} Table \ref{grid:software_integrity_levels} defines the software integrity levels used for Mail.
+            \begin{center}
+                \begin{longtable}{|m{2cm}<{\centering}|p{12cm}|}
+                    \caption{Assignment of software integrity levels}\label{grid:software_integrity_levels}\\
+                    \hline
+                    \textbf{Software integrity level} & \multicolumn{1}{c|}{\textbf{Description}} \\
+                    \hline
+                    \endfirsthead
+                    
+                    \multicolumn{2}{r}%
+                    \textbf{Continued} \\
+                    \hline
+                    \textbf{Software integrity level} & \multicolumn{1}{c|}{\textbf{Description}} \\
+                    \hline
+                    \endhead
+                    
+                    \endfoot
+                    
+                    \hline
+                    \endlastfoot
+                    
+                    1 & Software element must execute correctly or intended function will not be realized, causing negligible consequences. Mitigation not required. \\
+                    \hline
+                    2 & Software element must execute correctly or an intended function will not be realized, causing minor consequences. Complete mitigation possible.\\
+                    \hline
+                    3 & Software element must execute correctly or the intended use (mission) of the system/software will not be realized, causing serious consequences (permanent injury, major system degradation, economic or social impact). Partial to complete mitigation is possible.\\
+                    \hline
+                    4 & Software element must execute correctly or grave consequences (loss of life, loss of system, economic or social loss) will occur. No mitigation is possible.
+                \end{longtable}
+            \end{center}
+        \subsection{Resources summary}
+            \paragraph{} The project resource summary please check the reference section in SPMP$^{[\ref{ref:spmp}]}$. All the resource for V\&V team is list below:
+                \begin{enumerate}
+                    \item Team leader
+                    \item Project manager
+                    \item Quality Assurance Manager
+                \end{enumerate}
+            \paragraph{} V\&V team will be setup after all the project is done and Software Quality Assurance team ensures that the software is ready to be released. Software Quality Assurance team should hand in a report that the latest version is ready to be checked by V\&V team.
+        \subsection{Responsibilities}
+            \paragraph{} Main responsibility for V\&V team tasks, as described in section \ref{section:tasks}, i.e. \emph{Master schedule}, lies with team leader. Team leader can delegate the tasks within V\&V team. All the problems have to be reported to team leader, and all the problems will be gathered and report to Kreogist Dev Team. In case team leader will be unavailable for a short period of time, one of the team member will assume his tasks. If team leader will be unavailable for a longer period of time, V\&V team must be expanded and the tasks reorganized. Project Manager will be responsible for this.
+        \subsection{Tools, techniques, and methods}
+            \paragraph{} All the tools and development environment could be found at section \emph{Methods, Tools, and Techniques} of SPMP$^{[\ref{ref:spmp}]}$.
+            \paragraph{} V\&V tools is defined at section \emph{Verification and Validation Plan} of SPMP$^{[\ref{ref:spmp}]}$. The process of V\&V can be found at section \ref{section:process}, i.e. \emph{V\&V processes}.
+    \clearpage
+    \section{V\&V processes}\label{section:process}
+        \paragraph{} SVVP will identify V\&V activities and tasks to be performed for each of the V\&V processes, and will document those V\&V activities and tasks. The following contain an overview of the V\&V activities and tasks for all software life cycle processes.
+        \paragraph{} SVVP will address the following topics for each V\&V activity.
+        \subsection{Dependencies}
+            \paragraph{} To start up V\&V process, the following items should be handed in to team leader:
+            \begin{enumerate}
+                \item Software program and library binaries
+                \item Software source code
+                \item Software Requirements Specification (SRS), ID: KMKOT01
+                \item Software Quality Assurance team report.
+            \end{enumerate}
+            \paragraph{} The following items should be prepared:
+            \begin{enumerate}
+                \item Target platform machine.
+                \item System interfaces on target platform.
+            \end{enumerate}
+            \paragraph{} The following tools should be prepared for the V\&V process:
+            \begin{enumerate}
+                \item cppcheck
+                \item Valgrind
+                \item System Process Manager
+            \end{enumerate}
+            \paragraph{} The process will be divided into the following steps:
+            \begin{itemize}
+                \item Stability verification.
+                \item Function verification.
+                \item Quality verification.
+            \end{itemize}
+            \paragraph{} The following section will show up the whole verification check process.
+        \subsection{Stability Verification}
+            \paragraph{} Code stability test will be done on the following platform:
+            \paragraph{Software Requirement}
+            \begin{itemize}
+                \item OS: Ubuntu Linux 15.10 64-bit
+                \item Tools: cppcheck (static analysis tool), Valgrind (dynamic analysis tool)
+            \end{itemize}
+            \paragraph{Minimal Hardware Requirement}
+            \begin{itemize}
+                \item CPU: 2.0GHz Intel{\textregistered} Core$^{\texttt{TM}}$ 2 Duo CPU
+                \item Memory: 1GB DDR II 800
+                \item Disk Space: 1GB of available storage
+            \end{itemize}
+            \paragraph{} Besides, Qt platform and all the other dependencies of Mail and testing tools will be installed.
+            \paragraph{} First, use \texttt{cppcheck} to do the static check of the code. There shouldn't be any critical errors in the following list:
+            \begin{enumerate}
+                \item Local auto-variable usage error.
+                \item Array out of bound error.
+                \item Class error.
+                \item Abandon function usage error.
+                \item Abnormal memory usage error.
+                \item Memory leak.
+                \item Abnormal STL function usage error.
+                \item Other critical error in the cppcheck critical error list.
+            \end{enumerate}
+            \paragraph{} Next, compiled the source code and do the dynamic check of the code in Qt Creator with Valgrind. Valgrind shouldn't detect any of the following critical memory errors:
+            \begin{enumerate}
+                \item Accesses memory it shouldn't (areas not yet allocated, areas that have been freed, areas past the end of heap blocks, inaccessible areas of the stack).
+                \item Uses uninitialised values in dangerous ways.
+                \item Leaks memory.
+                \item Does bad frees of heap blocks (double frees, mismatched frees).
+                \item Passes overlapping source and destination memory blocks to memcpy() and related functions.
+            \end{enumerate}
+            \paragraph{} The report of cppcheck and Valgrind will be including into V\&V report.
+        \subsection{Function verification}
+            \paragraph{} Black-box testing will be performed on the implemented software interfaces to ensure that the outputs of each interface are consistent with what is input, based on the interface design.
+            \paragraph{} All the requirements define in SRS will be used as input in black box test. All the requirement should be pass the black-box testing with all the known exceptions processed. All the test will be recorded in the report.
+        \subsection{Quality verification}
+            \paragraph{} Tools included in \texttt{Valgrind} will be used as quality verification. The usage of tools could be founded on the official site of Valgrind: \url{http://valgrind.org/}. All the output of the tools will be recorded as a part of the report.
+        \subsection{Summary}
+            \paragraph{} In any of the process, if there's one critical error detected, the process will be forced stop, and the V\&V meeting will be marked as failed. The problem will be marked as an issue and it should be setup in Github issue tracking system. The report will be abandon.
+            \paragraph{} After all the processes done, the report will be marked as accept. V\&V team will notify Kreogist Dev Team to release Mail.
+    \section{V\&V reporting requirements}
+        \paragraph{} Summarize all V\&V activities and results, including status and disposition of anomalies in the V\&V final report.
+        \paragraph{} 
+    \section{V\&V administrative requirements}
+        \subsection{Anomaly resolution and reporting}
+        \subsection{Task iteration policy}
+        \subsection{Deviation policy}
+        \subsection{Control procedures}
+        \subsection{Standards, practices, and conventions}
+    \section{V\&V test documentation requirements}
+\end{document}
