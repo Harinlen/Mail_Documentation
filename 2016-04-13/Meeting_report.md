@@ -1,8 +1,16 @@
 #Meeting minutes from Kreogist Dev Team meeting 13.4.2016
 14, April, 2016
 
-Disscussed icon design.
+Disscuss icon design. Draw a lot of the major icons include but not limited to the following stuffs:
 
-Drew some prototype for the mail writing window.
+1. Compose button.
+2. Ascending Indicator.
+2. Settings.
+2. Account default avatar.
 
-Practiced Qt developing.
+Draw some prototype for the mail writing window.
+
+Practice Qt developing, including but limited to the following stuffs:
+
+ - Drop down menu (unibar).
+ - Preference background (darkness animation).
