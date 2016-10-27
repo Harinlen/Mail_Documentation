@@ -6,6 +6,7 @@
 2. Discuss about design in login page.
 3. Discuss about the IMAP and SMTP.
 4. Make plan for MVP and plan next week.
+4. Re-estimate the velocity, change some user story points on Trello.
 
 ## Content
 1. Finish SMTP.
